@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+}
+
+.bar-nav{
+    background-color: #556B2F;
+}
+.logo{
+    font-size: 40px;
+    color: white;
+}

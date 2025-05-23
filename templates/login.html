@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/css/login.css">
+        <link rel="stylesheet" href="static\css\fontawesome-free-web\css\all.css">
+    </head>
+    <body>
+        <form action = "http://localhost:8080/validated_user" method = "post">
+            <div class="card-login">
+                <div class="profile-circle">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <div class="part-login">
+                    <div class="conjunto-login">
+                        <div class="fig">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div class="login">
+                            <input type="text" name="user" class="login-input" placeholder="Usuário" required/>
+                        </div>
+                    </div>
+
+                    <div class="conjunto-login">
+                        <div class="fig">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <div class="login">
+                            <input type="password" name="password" class="login-input" placeholder="Senha" required/>
+                        </div>
+                    </div>
+
+
+                </div>
+                <button type="submit" class="login-button">LOGIN</button>
+            </div>
+        </form>
+    </body>
+</html>

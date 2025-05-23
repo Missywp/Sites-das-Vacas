@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* This is the gradient that matches the moss green aesthetic */
+    background: linear-gradient(to bottom, #d0d8b3, #5a6b4a);
+}
+
+.card-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* More opaque white for the card */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    position: relative; /* Needed for positioning the top circle */
+}
+
+/* New style for the circle above the card */
+.profile-circle {
+    position: absolute;
+    top: -50px; /* Adjust to position above the card */
+    width: 100px;
+    height: 100px;
+    background-color: #556B2F; /* Darker moss green */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile-circle .fa-user {
+    color: #ffffff;
+    font-size: 40px; /* Adjust icon size */
+}
+
+
+.part-login {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 50%; /* Increased height to accommodate the elements */
+    margin-top: 50px; /* Push down to make space for the circle */
+}
+
+.conjunto-login {
+    display: flex;
+    width: 350px; /* Adjust as needed */
+    height: 50px; /* Slightly taller for better input */
+    margin-bottom: 20px; /* Space between input fields */
+    border-radius: 5px; /* Slightly rounded corners for the input container */
+    overflow: hidden; /* Ensures icon and input stay within bounds */
+}
+
+.fig {
+    display: flex;
+    width: 50px; /* Wider for the icon */
+    background-color: #556B2F; /* Darker moss green for the icon background */
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* Icon color */
+    font-size: 20px; /* Icon size */
+}
+
+.login {
+    flex-grow: 1; /* Allows the input part to take remaining space */
+    background-color: #88B04B; /* Lighter moss green for the input background */
+}
+
+.login-input {
+    width: 100%; /* Take full width of its parent (.login) */
+    height: 100%; /* Take full height of its parent (.login) */
+    background-color: transparent;
+    border: none; /* No border for the input itself */
+    outline: none;
+    padding-left: 20px;
+    color: #ffffff;
+    font-size: 16px; /* Readable font size */
+}
+
+.login-input::placeholder {
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white for placeholder */
+}
+
+/* Styles for "Remember me" and "Forgot Password?" */
+.options-login {
+    display: flex;
+    justify-content: space-between;
+    width: 350px; /* Match the width of .conjunto-login */
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Login Button */
+.login-button {
+    width: 350px; /* Match the width of inputs */
+    height: 50px;
+    background-color: #88B04B; /* Lighter moss green for the button */
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px; /* Space above the button */
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #70943f; /* Slightly darker on hover */
+}
