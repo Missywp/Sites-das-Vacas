@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 body{
     margin: 0;
     display: flex;
     flex-direction: column;
     background-color: #556b2f5b;
+    font-family: 'Poppins', sans-serif;
 }
 
 .bar-nav{
@@ -44,7 +46,7 @@ body{
     height: 50px;
     width: 250px;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 15px;
     overflow: hidden;
 }
 .ballUser i {
@@ -108,7 +110,7 @@ body{
 }
 .itensMenup{
     margin-left: 15px;
-    font-size: 17px;
+    font-size: 15px;
 }
 .itensMenu:hover{
     background-color: #67745b;
