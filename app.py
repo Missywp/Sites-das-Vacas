@@ -1,10 +1,12 @@
 from flask import Flask, render_template, request
 
 from users import user
+from configAmbiente import configAmbientes
 
 app = Flask(__name__)
 
 app.register_blueprint(user, url_prefix='/')
+app.register_blueprint(configAmbientes, url_prefix='/')
 
 @app.route('/')
 def index():

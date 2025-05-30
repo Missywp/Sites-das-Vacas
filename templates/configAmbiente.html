@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/configAmbiente.css') }}">
+{% endblock %}
+{% block content %}
+    <div class="configAmbientePeso">
+        <h1>Novo peso</h1>
+        <form class="formPeso">
+            <label for="pesoBase">peso ideal:</label>
+            <input type="number" id="pesoBase" placeholder="Kg">
+            <p><input class="botaoCadastrar" type = "submit" value = "Cadastrar" /></p>
+        </form>
+    </div>
+    <div class="configAmbienteHr">
+        <h1>Novo horário para despejo</h1>
+        <form class="formHr">
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" placeholder="horario definido:">
+            <p><input class="botaoCadastrar" type = "submit" value = "Cadastrar" /></p>
+        </form>
+    </div>
+{% endblock %}
