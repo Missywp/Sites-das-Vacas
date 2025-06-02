@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cadastrarUser.css') }}">
+{% endblock %}
+{% block content %}
+    <div class="cadastroUser">
+        <h1>Cadastro de usuário</h1>
+        <form class="formUser">
+
+
+            <div class="formEsq">
+                <div class"label">
+                    <div class="text"><label for="primeiroNome">Primeiro nome:</label></div>
+                    <div class="text"><label for="email">Email:</label></div>
+                    <div class="text"><label for="telefone">Telefone:</label></div>
+                </div>
+
+                <div class="inputdiv">
+                    <input class="input" type="text" id="primeiroNome" placeholder="Primeiro nome">
+                    <input class="input" type="email" id="email" placeholder="Email">
+                    <input class="input" type="text" id="telefone" placeholder="Ex: (99) 9 9999-9999">
+                </div>
+            </div>
+
+            <div class="formDir">
+                <div class"label">
+                    <div class="text"><label for="SegundoNome">Segundo nome:</label></div>
+                    <div class="text"><label for="senha">Senha:</label></div>
+                    <div class="text"><label for="tipoUser">Tipo de usuário:</label></div>
+                </div>
+
+                <div class="inputdiv">
+                    <input class="input" type="text" id="SegundoNome" placeholder="Segundo Nome">
+                    <input class="input" type="text" id="senha" placeholder="Senha">
+                    <input class="input" type="text" id="tipoUser">
+                </div>
+            </div>
+
+
+            <input class="botaoCadastrar" type = "submit" value = "Cadastrar" />
+            <input class="limparForm" type="reset" value="Limpar formulário">
+        </form>
+    </div>
+{% endblock %}

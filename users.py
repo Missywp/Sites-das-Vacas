@@ -20,3 +20,11 @@ def validated_user():
             return '<h1>invalid credentials!</h1>'
     else:
         return render_template('login.html')
+    
+@user.route('/cadastrarUser')
+def cadastrarUser():
+    return render_template('cadastrarUser.html')
+
+@user.route('/listarUser')
+def listarUser():
+    return render_template('usuarios.html')
