@@ -21,6 +21,11 @@ body{
     display: flex;
     align-items: center;
 }
+.logoFazenda{
+    width: 273px;
+    height: 71px;
+
+}
 .logo {
     font-size: 40px;
     color: black;
