@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dadosAtuais.css') }}">
+{% endblock %}
+{% block content %}
+    <div class="dadosAtuais">
+        <div class="pesoDefinido">
+            <h1>Peso definido</h1>
+            <p>peso ideal:</p>
+        </div>
+        <div class="ambienteHr">
+            <h1>Horário definido para despejo</h1>
+            <p>Horário:</p>
+        </div>
+    </div>
+{% endblock %}
