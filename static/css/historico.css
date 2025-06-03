@@ -1,4 +1,4 @@
-.itensMenu2{
+.itensMenu5{
     background-color: #7c8f5b;
 }
 .tableConteiner {
@@ -9,7 +9,7 @@
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
-.listaUsers{
+.historico{
     background-color: white;
     width: calc(100% - 20px);
     border-radius: 15px;
