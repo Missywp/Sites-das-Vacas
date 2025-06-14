@@ -6,6 +6,7 @@ from controllers.dadosAtuaisController import dadosAtuais
 from controllers.historicoController import historico
 from controllers.balancaController import balanca
 from controllers.motorController import motor
+from controllers.dhtController import dht
 
 if __name__ == '__main__':
     app = create_app()
@@ -15,5 +16,6 @@ if __name__ == '__main__':
     app.register_blueprint(historico, url_prefix='/')
     app.register_blueprint(balanca, url_prefix='/')
     app.register_blueprint(motor, url_prefix='/')
+    app.register_blueprint(dht, url_prefix='/')    
     
     app.run(host='0.0.0.0', port=8080, debug=True)

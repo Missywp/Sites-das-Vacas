@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/listarMotor.css') }}">
+    <title>Listar motor</title>
+{% endblock %}
+{% block content %}
+    <div class="listaUsers">
+        <h1>Lista de motor</h1>
+        <div class="tableConteiner">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Tópico</th>
+                        <th>Última leitura</th>
+                        <th>Status</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Algo</td>
+                        <td>Algo</td>
+                        <td>23</td>
+                        <td>Sim</td>
+                        <td><a href="#">Editar</a></td>
+                        <td><a href="#">Excluir</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

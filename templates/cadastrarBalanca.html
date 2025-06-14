@@ -1,19 +1,26 @@
 {% extends "base.html" %}
 {% block head %}
     {{ super() }}
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/cadastrarUser.css') }}">
-    <title>Cadastrar usuário</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cadastrarBalanca.css') }}">
+    <title>Cadastrar balança</title>
 {% endblock %}
 {% block content %}
-    <div class="cadastroUser">
-        <h1>Cadastro de usuário</h1>
-        <form class="formUser">
+    <div class="cadastroBalanca">
+        <h1>Cadastro de Balança</h1>
+        <form class="formBalanca">
 
-            <label for="nomeBalanca">Nome Balança:</label>
-            <div class="text"><label for="nomeBalanca">Nome Balança:</label></div>
+            <div class="formEsq"> 
+                <div>
+                    <label for="nomeBalanca">Nome Balança:</label>
+                    <div class="text"><input class="input" type="text" id="nomeBalanca" placeholder="Nome"></div>
+                </div>
 
-            <label for="nomeBalanca">Tópico:</label>
-            <div class="text"><label for="topico">Tópico:</label></div>
+                <div>
+                    <label for="topico">Tópico:</label>
+                    <div class="text"><input class="input" type="text" id="topico" placeholder="Tópico"></div>
+                </div>
+            </div>
+
 
         </form>
     </div>

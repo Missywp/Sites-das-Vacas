@@ -93,7 +93,7 @@ body{
     height: calc(100vh - 70px);
     background-color: #5a6b4a;
 }
-.itensMenu1, .itensMenu2, .itensMenu3, .itensMenu4, .itensMenu5 {
+.itensMenu1, .itensMenu2, .itensMenu3, .itensMenu4, .itensMenu5, .itensMenu6, .itensMenu7, .itensMenu8, .itensMenu9, .itensMenu10, .itensMenu11 {
     display: flex;
     align-items: center;
     margin-top: 10px;

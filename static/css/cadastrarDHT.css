@@ -1,0 +1,80 @@
+.itensMenu4{
+    background-color: #7c8f5b;
+}
+h1{
+    font-size: 20px;
+}
+.cadastroDht{
+    background-color: white;
+    width: calc(100% - 20px);
+    height: 350px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.formDHT{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.formEsq{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    display: flex;
+}
+.label{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.inputdiv{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+.input{
+    height: 20px;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+    padding-left: 10px;
+
+}
+.input:focus {
+    border-color: #556B2F;
+    box-shadow: 0 0 5px rgba(85, 107, 47, 0.5);
+    background-color: #fff;
+}
+.botaoCadastrar{
+    width: 100px;
+    padding: 7px;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+.botaoCadastrar:hover{
+    background-color: #556b2f3d;
+    padding: 8px;
+}
+
+.limparForm{
+    width: 150px;
+    padding: 7px;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.limparForm:hover{
+    background-color: #556b2f3d;
+    padding: 8px;
+}
