@@ -1,28 +1,28 @@
 {% extends "base.html" %}
 {% block head %}
     {{ super() }}
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/cadastrarMotor.css') }}">
-    <title>Cadastrar motor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cadastrarBalanca.css') }}">
+    <title>Editar DHT</title>
 {% endblock %}
 {% block content %}
     <div class="cadastroBalanca">
-        <h1>Cadastro de motor</h1>
+        <h1>Editar DHT</h1>
         <form class="formBalanca">
 
             <div class="formEsq"> 
                 <div>
-                    <label for="nomeMotor">Nome motor:</label>
-                    <div class="text"><input class="input" type="text" id="nomeMotor" placeholder="Nome"></div>
+                    <label for="nomeDht">Nome DHT:</label>
+                    <div class="text"><input class="input" type="text" id="nomeDht" placeholder="Nome"></div>
                 </div>
 
                 <div>
                     <label for="topico">Tópico:</label>
                     <div class="text"><input class="input" type="text" id="topico" placeholder="Tópico"></div>
                 </div>
+
+                <div><input class="botaoCadastrar" type = "submit" value = "Editar" /><div>
+
             </div>
-            
-            <input class="botaoCadastrar" type = "submit" value = "Cadastrar" />
-            <input class="limparForm" type="reset" value="Limpar formulário">
         </form>
     </div>
 {% endblock %}

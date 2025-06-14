@@ -28,3 +28,7 @@ def cadastrarUser():
 @user.route('/listarUser')
 def listarUser():
     return render_template('usuarios.html')
+
+@user.route("/editarUsuario")
+def editarUsuario():
+    return render_template('editarUsuario.html')
