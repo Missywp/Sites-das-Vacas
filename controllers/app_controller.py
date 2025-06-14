@@ -6,6 +6,8 @@ def create_app():
     static_folder="./static/",
     root_path="./")
     
+    app.secret_key = 'chave-secreta'
+    
     @app.route('/')
     def index():
         return render_template("login.html")
