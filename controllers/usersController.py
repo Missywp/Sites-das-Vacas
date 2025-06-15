@@ -9,7 +9,7 @@ users = {
     'funcionario':  {'password': '1234', 'role': 'funcionario'}
 }
 
-@user.route('/validated_user', methods=['POST'])
+@user.route('/validated_user', methods=['GET','POST'])
 def validated_user():
     if request.method == 'POST':
         user_form = request.form['user']
@@ -20,7 +20,7 @@ def validated_user():
             session['role'] = users[user_form]['role']
             
             flash(f'Bem-vindo, {user_form}!', 'success')
-            return redirect(url_for('user_blueprint.listarUser')) 
+            return redirect(url_for('dadosAtuais_blueprint.dadoAtual')) 
 
         else:
             flash('Usuário ou senha inválidos!', 'danger')
