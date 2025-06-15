@@ -7,3 +7,4 @@ configAmbientes = Blueprint("configAmbiente_blueprint", __name__, template_folde
 @role_required(roles=['admin', 'veterinario'])
 def configAmbiente():
     return render_template('configAmbiente.html')
+
