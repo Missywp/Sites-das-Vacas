@@ -11,7 +11,8 @@ def role_required(roles):
 
             if session.get('role') not in roles:
                 flash('Você não tem permissão para acessar esta página.', 'danger')
-                return redirect(url_for('user_blueprint.listarUser'))
+                # ALTERADO: Redireciona para a tela de login em vez de para a mesma página.
+                return redirect(url_for('user_blueprint.validated_user'))
 
             return f(*args, **kwargs)
         return decorated_function
